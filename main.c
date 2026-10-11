@@ -11,28 +11,16 @@ int main(void)
     printf("Enter operator (+, -, *, /): ");
     scanf(" %c", &op);
 
-    switch (op)
-    {
-        case '+':
-            printf("Result = %d\n", num1 + num2);
-            break;
-
-        case '-':
-            printf("Result = %d\n", num1 - num2);
-            break;
-
-        case '*':
-            printf("Result = %d\n", num1 * num2);
-            break;
-
-        case '/':
-            printf("Result = %d\n", num1 / num2);
-            break;
-
-        default:
-            printf("Invalid operator\n");
-            break;
-    }
+    if (op == '+')
+        printf("Result = %d\n", num1 + num2);
+    else if (op == '-')
+        printf("Result = %d\n", num1 - num2);
+    else if (op == '*')
+        printf("Result = %d\n", num1 * num2);
+    else if (op == '/')
+        printf("Result = %d\n", num1 / num2);
+    else
+        printf("Invalid operator\n");
 
     return 0;
 }
